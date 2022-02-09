@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cordzip.css">
+    <title>Document</title>
+</head>
+
+<script>
+        function msave() {
+ 
+ document.getElementById("savem").classList.toggle("hide");
+  
+ document.getElementById("rm").classList.remove("border-black");
+ document.getElementById("pm").classList.remove("border-black");
+ document.getElementById("sm").classList.remove("border-black");
+
+ document.getElementById("rm").classList.remove("small-p");
+ document.getElementById("pm").classList.remove("small-p");
+ document.getElementById("sm").classList.remove("small-p");
+
+
+}
+
+function psave() {
+
+ document.getElementById("savep").classList.toggle("hide");
+
+ document.getElementById("rp").classList.remove("border-black");
+ document.getElementById("mp").classList.remove("border-black");
+ document.getElementById("sp").classList.remove("border-black");
+
+ document.getElementById("rp").classList.remove("small-p");
+ document.getElementById("mp").classList.remove("small-p");
+ document.getElementById("sp").classList.remove("small-p");
+
+}
+
+</script>
+
+<body class="white-hero">
+    
+ 
+    <script src="cordzip.js"></script>
+ 
+    
+    <p class="black big-m">Please Select Your Device</p>
+    <p class="big-my"></p>
+    <a class="black border-black small-p small-m" 
+    onclick="page1()">Mobile</a>
+    <p class="big-my"></p>
+    <a class="black border-black small-p small-m" 
+    onclick="page2()">Pc</a>
+    
+          <div class="menu white layer02 hide" id="page1">
+            
+            <div id="savem" class="heading">
+                <a id="rm" class="black border-black small-p small-m" 
+            onclick="printdata()">Refresh</a>
+
+            <a id="pb" class="black border-black small-p small-m"
+             onclick="page2()">PC</a>
+
+             
+            <a id="sm" class="black white-hero border-black small-p small-m"
+            onclick="msave()">Save Mode</a>
+            </div>
+
+
+              <p id="a" class="black"></p>
+          </div>
+ 
+          <div class="menu white layer02 hide" id="page2">
+            
+            <div id="savep" class="heading float">
+                <a id="rp" class="black border-black small-m small-p" 
+            onclick="printdata()">Refresh</a>
+
+            <a id="mp"class="black border-black small-p small-m"
+             onclick="page1()">Mobile</a>
+
+             <a id="sp" class="black white-hero border-black small-p small-m"
+             onclick="psave()">Save Mode</a>
+            </div>
+            
+         <p id="b" class="black"></p>
+        </div>
+ 
+      
+</body>
+</html>

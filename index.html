@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/cordzip.css">
+    <link rel="shortcut icon" href="asset/icon.png">
+    <title>Editor</title>
+</head>
+
+<style>
+    
+    .top-screen {
+        height: 50%;
+        width: 100%;
+        bottom: 50%;
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        position: fixed;
+        background-color: rgb(33, 32, 41);
+        color: white;
+    }
+
+     .bottom-screen {
+         width: 100%;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        top: 50%;
+        position: fixed;
+        background-color: rgb(33, 32, 41);
+        color: white;
+    }
+
+    .mobile-ui .runcode2 {
+         bottom: 70px;
+          position: fixed;
+          z-index: 2;
+    }
+
+    .mobile-ui .runcode {
+         bottom: 10px;
+          position: fixed;
+          z-index: 2;
+    }
+
+    
+    .pc-ui .runcode {
+         left: 90px;
+         bottom: 30px;
+          position: fixed;
+          z-index: 2;
+    }
+
+    .left-screen {
+        height: 100%;
+        width: 45%;
+        bottom: 0px;
+        left: 0px;
+        top: 0px;
+        position: fixed;
+        background-color: rgb(33, 32, 41);
+        color: white;
+    }
+
+     .right-screen {
+         width: 50%;
+         height: 100%;
+        bottom: 0px;
+        right: 0px;
+        top: 0px;
+        position: fixed;
+        background-color: rgb(33, 32, 41);
+        color: white;
+    }
+</style>
+
+<script src="asset/cordzip.js"></script>
+
+<script>
+        function skiploadm() {
+            document.getElementById("slm").classList.add("hide");
+ document.getElementById("mobile-ui").classList.remove("hide");
+}
+
+    function skiploadp() {
+ 
+        document.getElementById("slp").classList.add("hide");
+    document.getElementById("pc-ui").classList.remove("hide");
+}
+
+function resetm() {
+ 
+ document.getElementById("a").innerText = "";
+}
+
+function resetp() {
+ 
+ document.getElementById("b").innerText ="";
+}
+</script>
+<body>
+
+    <div class="pc-ui">
+    <div class="hero importbg menu">
+        <div class="item leftmenu">
+             <img src="asset/icon.png" alt="" 
+             class="small-circle small-m">
+            <p class="big-text small-m">Cordzip</p>
+        </div>
+
+    <a id="slp"
+    class="white rightmenu big-m border-white small-p float layer02"
+     onclick="skiploadp()">
+   Start Now! |    
+
+<p class="mid-m">> Enable Your Javascript</p>
+
+<p class="mid-m">> This saves codes to your local storage</p>
+
+<p class="mid-mt">"Cordzip is owned by Catkatwu Ent</p>
+<p class="">Please Do not Copy Code "</p>
+
+<p class="mid-mt">"To save it goto cordzip.ddns.net/save</p>
+<p class="">1. Choose Device 2. Refresh and Savemode 3. click CTRL + S "</p>
+    </a>
+     </div></div>
+
+     <div class="mobile-ui">
+        <div class="hero">
+            <div class="item">
+                 <img src="asset/icon.png" alt="" 
+                 class="small-circle small-m">
+                <p class="big-text small-m">Cordzip</p>
+            </div>
+        
+            <a id="slm"
+            class="white border-white small-p heading small-m"
+             onclick="skiploadm()">Start</a>
+
+             <a class="white border-white small-p heading small-m"
+             onclick="page3()">Info</a>
+
+           <div id="page3" class="hide menu hero black">
+
+             <div class="heading"><a id="slm"
+                class="white border-white item item-left small-p"
+                 href="">Back</a></div>
+            <p class="item item-left small-m">● Enable Your Javascript</p>
+            <p class="item item-left small-m">● Don't Steal Codes</p>
+            <p class="item item-left small-m">● This is saving data from your local device</p>
+            <p class="item item-right small-m">● Cordzip is owned by Catkatwu Ent</p>
+            <p class="item item-right small-m">● Cordzip is a Online Html Editor</p>
+            <p class="item item-right small-m">for many platform like pc, mobile</p>
+            
+            <p class="mid-mt">"To save it goto cordzip.ddns.net/save</p>
+<p class="">and click CTRL + S "</p>
+          
+          
+           </div>
+        </div>
+    
+         </div>
+
+    <div id="mobile-ui" class="mobile-ui hide">
+    <div class="editor">
+        
+        <div class="item big-mt">
+            <embed src="asset/dknlskjdhskjdkshkd20830997392.html" 
+            class="top-screen">
+            </div>
+
+
+    
+        
+       <div class="item item-left runcode"> 
+           <a class="small-m small-p border-white"
+            onclick="getdata()">Run</a>
+              </div>
+
+              <div class="item item-left runcode2"> 
+                <a class="small-m small-p border-white" 
+                onclick="resetm()">Reset</a>
+                   </div>
+     
+
+              
+        <textarea id="a"
+        class="big-p small-text no-resize bottom-screen" id="a" value="">
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+         <title>Document</title>
+        </head>
+        
+        <body>
+
+            <div class="hero white">
+                <p class="black mid-text">Sizes</p>
+                <p class="black small-text">small | mid | big</p>
+            </div>
+        </body>
+        
+        </html>
+    </textarea>
+
+
+    </div>
+</div>
+
+<div id="pc-ui" class="pc-ui hide">
+    <div class="editor">
+        
+       <div class="item item-left runcode"> 
+           <a class="small-p small-mx 
+           border-white" onclick="getdata()">Run</a>
+
+           <a class="small-p 
+           small-mx border-white" onclick="resetp()">Reset</a>
+              </div>
+
+<textarea id="b" class="big-p no-resize left-screen" id="b" value="">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+<!-- Template -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+     <title>Document</title>
+    </head>
+    
+    <body>
+
+        <div class="heading black">
+           <p class="item item-left white mid-text caps small-ls">cordzip</p>
+                <a class="item item-right white mid-text caps small-ls"
+             onclick="menu()">=</a>
+        </div>
+
+        <div id="menu" class="menu black hide layer02">
+            <div class="heading black">
+                <p class="item item-left white mid-text caps small-ls">cordzip</p>
+                <a class="item item-right white mid-text caps small-ls"
+                 onclick="menu()">×</a>
+            </div>
+        </div>
+        
+
+        <div class="hero white">
+            <p class="black mid-text">Sizes</p>
+            <p class="black small-text">small | mid | big</p>
+        </div>
+
+        <div class="mid-hero black">
+            <p class="white mid-text">Color</p>
+            <p class="white small-text">
+                White | Black | Dark(grey) | Danger(Red) | Link(Blue) 
+                | Primary(green) | Violet | Pink</p>
+        </div>
+        <div class="mid-hero black">
+            <p class="white mid-text">Set Codes</p>
+            <p class="white small-text">
+               heading | menu | rightmenu | leftmenu | aclosemenu
+               | Scroll | Slider
+            </p>
+        </div>
+    </body>
+    
+    </html>
+
+
+
+
+</textarea>
+
+        <div class="item big-mt">
+            <embed src="asset/dknlskjdhskjdkshkd20830997392.html" 
+            class="right-screen">
+            </div>
+
+    </div>
+</div>
+    
+
+</body>
+</html>
