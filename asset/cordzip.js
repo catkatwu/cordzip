@@ -42,7 +42,7 @@ function aclosemenu() {
 
 function page1() {
    
-    document.getElementById("page1").classList.remove("hide");
+    document.getElementById("page1").classList.toggle("hide");
 
     document.getElementById("page2").classList.add("hide");
     document.getElementById("page3").classList.add("hide");
@@ -56,7 +56,7 @@ function page1() {
 /*page2*/
 
 function page2() {
-    document.getElementById("page2").classList.remove("hide");
+    document.getElementById("page2").classList.toggle("hide");
 
     
     document.getElementById("page1").classList.add("hide");
@@ -71,7 +71,7 @@ function page2() {
 /*page3*/
 
 function page3() {
-    document.getElementById("page3").classList.remove("hide");
+    document.getElementById("page3").classList.toggle("hide");
 
     
     document.getElementById("page1").classList.add("hide");
@@ -87,9 +87,8 @@ function page3() {
 /*page4*/
 
 function page4() {
-    document.getElementById("page4").classList.remove("hide");
+    document.getElementById("page4").classList.toggle("hide");
 
-    document.getElementById("menu").classList.toggle("hide");
     document.getElementById("page1").classList.add("hide");
     document.getElementById("page2").classList.add("hide");
     document.getElementById("page3").classList.add("hide");
@@ -100,9 +99,8 @@ function page4() {
 /*page5*/
 
 function page5() {
-    document.getElementById("page5").classList.remove("hide");
+    document.getElementById("page5").classList.toggle("hide");
 
-    document.getElementById("menu").classList.toggle("hide");
     document.getElementById("page1").classList.add("hide");
     document.getElementById("page2").classList.add("hide");
     document.getElementById("page3").classList.add("hide");
@@ -119,48 +117,50 @@ var functions = ("/:function");
     )};*/
 
 /*Get Data from a - g*/
+
 function getdata() {
     localStorage.setItem("a", document.getElementById("a").value);
     localStorage.setItem("b", document.getElementById("b").value);
-    localStorage.setItem("a", document.getElementById("c").value);
-    localStorage.setItem("a", document.getElementById("d").value);
-    localStorage.setItem("a", document.getElementById("e").value);
-    localStorage.setItem("a", document.getElementById("f").value);
-    localStorage.setItem("a", document.getElementById("g").value);
+    localStorage.setItem("c", document.getElementById("c").value);
+    localStorage.setItem("d", document.getElementById("d").value);
+    localStorage.setItem("e", document.getElementById("e").value);
+    localStorage.setItem("f", document.getElementById("f").value);
+    localStorage.setItem("g", document.getElementById("f").value);
+
 }
 
 /*Deletes Data from a - g*/
 function deldata() {
-    localStorage.clear("a", document.getElementById("a").value);
-    localStorage.clear("b", document.getElementById("b").value);
-    localStorage.clear("a", document.getElementById("c").value);
-    localStorage.clear("a", document.getElementById("d").value);
-    localStorage.clear("a", document.getElementById("e").value);
-    localStorage.clear("a", document.getElementById("f").value);
-    localStorage.clear("a", document.getElementById("g").value);
+    localStorage.setItem("a", document.getElementById("a"));
+    localStorage.setItem("b", document.getElementById("b"));
+    localStorage.setItem("c", document.getElementById("c"));
+    localStorage.setItem("d", document.getElementById("d"));
+    localStorage.setItem("e", document.getElementById("e"));
+    localStorage.setItem("f", document.getElementById("f"));
+    localStorage.setItem("g", document.getElementById("g"));
 }
 
 /*Show Data a - g to resul page*/
 function showdata() {
-    document.getElementById("a").innerText =  localStorage.getItem("a");
-    document.getElementById("b").innerText =  localStorage.getItem("b");
-    document.getElementById("c").innerText =  localStorage.getItem("c");
-    document.getElementById("d").innerText =  localStorage.getItem("d");
-    document.getElementById("e").innerText =  localStorage.getItem("e");
-    document.getElementById("f").innerText =  localStorage.getItem("f");
-    document.getElementById("g").innerText =  localStorage.getItem("g");
-
+    document.getElementById("a-").innerText =  localStorage.getItem("a");
+    document.getElementById("b-").innerText =  localStorage.getItem("b");
+    document.getElementById("c-").innerText =  localStorage.getItem("c");
+    document.getElementById("d-").innerText =  localStorage.getItem("d");
+    document.getElementById("e-").innerText =  localStorage.getItem("e");
+    document.getElementById("f-").innerText =  localStorage.getItem("f");
+    document.getElementById("g-").innerText =  localStorage.getItem("g");
 
 }
 
-function printdata() {
-    document.getElementById("a").innerHTML =  localStorage.getItem("a");
-    document.getElementById("b").innerHTML =  localStorage.getItem("b");
-    document.getElementById("c").innerHTML =  localStorage.getItem("c");
-    document.getElementById("d").innerHTML =  localStorage.getItem("d");
-    document.getElementById("e").innerHTML =  localStorage.getItem("e");
-    document.getElementById("f").innerHTML =  localStorage.getItem("f");
-    document.getElementById("g").innerHTML =  localStorage.getItem("g");
 
+function printdata() {
     
+    document.getElementById("a-").innerHTML =  localStorage.getItem("a");
+    document.getElementById("b-").innerHTML =  localStorage.getItem("b");
+    document.getElementById("c-").innerHTML =  localStorage.getItem("c");
+    document.getElementById("d-").innerHTML =  localStorage.getItem("d");
+    document.getElementById("e-").innerHTML =  localStorage.getItem("e");
+    document.getElementById("f-").innerHTML =  localStorage.getItem("f");
+    document.getElementById("g-").innerHTML =  localStorage.getItem("g");
+   
 }
